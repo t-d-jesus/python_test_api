@@ -1,0 +1,11 @@
+[run]
+source = models
+
+
+[report]
+exclude_lines =
+    def __str__
+    pass
+
+[html]
+directory = htmlcov

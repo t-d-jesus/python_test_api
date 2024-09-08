@@ -1,0 +1,7 @@
+uvicorn main:app --reload
+pytest tests/* -v
+pytest tests/* -v -k drink
+pytest --cov
+pytest --cov=models/menu tests/*
+pytest --cov=models/menu tests/tests_restaurant.py --cov-report term-missing
+pytest --cov=models/menu/ tests/* --cov-report html
